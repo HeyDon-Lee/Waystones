@@ -73,7 +73,7 @@ public class WaystoneConfig {
 
         @Config.Name("Creative Mode Only")
         @Config.Comment("If enabled, waystones can only be placed in creative mode.")
-        public boolean creativeModeOnly;
+        public boolean creativeModeOnly = false;
 
         @Config.Name("Set Spawnpoint on Activation")
         @Config.Comment("If enabled, the player's spawnpoint will be set to the last activated waystone.")
@@ -89,7 +89,7 @@ public class WaystoneConfig {
 
         @Config.Name("Allow Global Waystones for Everyone")
         @Config.Comment("If enabled, everyone can create global waystones, not just players in creative mode.")
-        public boolean allowEveryoneGlobal = false;
+        public boolean allowEveryoneGlobal = true;
 
         @Config.Name("Reset Use On Damage")
         @Config.Comment("Whether the use of a warp stone or warp scroll should be interrupted by damage. Not supported when playing with Vivecraft!")
@@ -123,7 +123,7 @@ public class WaystoneConfig {
         @Config.Name("Change to generate just anywhere")
         @Config.Comment("The chance for a waystone to generate just anywhere (without a structure), scaled by 1/10000.")
         @Config.RangeDouble(min = 0, max = 10000)
-        public float legacyChance = 0f;
+        public float legacyChance = 50f;
 
         @Config.Name("Custom Names")
         @Config.Comment("The Name Generator will pick from these names until they have all been used, then it will generate random ones again.")
